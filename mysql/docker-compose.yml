@@ -3,7 +3,7 @@ services:
   mysql-master: 
     restart: always
     privileged: true
-    image: mysql:5.7 
+    image: mysql:8.0 
     container_name: mysql-master 
     volumes: 
       - ./master/var/lib/mysql:/var/lib/mysql 
@@ -20,7 +20,7 @@ services:
   mysql-slave: 
     restart: always 
     privileged: true
-    image: mysql:5.7 
+    image: mysql:8.0
     container_name: mysql-slave 
     volumes: 
       - ./slave/var/lib/mysql:/var/lib/mysql 

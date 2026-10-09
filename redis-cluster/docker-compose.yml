@@ -1,7 +1,7 @@
 version: "3"
 services:
   redis-m6391:
-    image: redis:7.2 # 基础镜像
+    image: redis:8.10 # 基础镜像
     container_name: redis-m6391 # 容器名称
     restart: always
     environment: # 环境变量
@@ -30,7 +30,7 @@ services:
       extnetwork:
         ipv4_address: 172.16.0.241
   redis-m6392:
-    image: redis:7.2 # 基础镜像
+    image: redis:8.10 # 基础镜像
     container_name: redis-m6392 # 容器名称
     restart: always
     environment: # 环境变量
@@ -59,7 +59,7 @@ services:
       extnetwork:
         ipv4_address: 172.16.0.242
   redis-m6393:
-    image: redis:7.2 # 基础镜像
+    image: redis:8.10 # 基础镜像
     container_name: redis-m6393 # 容器名称
     restart: always
     environment: # 环境变量
@@ -88,7 +88,7 @@ services:
       extnetwork:
         ipv4_address: 172.16.0.243
   redis-s6394:
-    image: redis:7.2 # 基础镜像
+    image: redis:8.10 # 基础镜像
     container_name: redis-s6394 # 容器名称
     restart: always
     environment: # 环境变量
@@ -117,7 +117,7 @@ services:
       extnetwork:
         ipv4_address: 172.16.0.244
   redis-s6395:
-    image: redis:7.2 # 基础镜像
+    image: redis:8.10 # 基础镜像
     container_name: redis-s6395 # 容器名称
     restart: always
     environment: # 环境变量
@@ -146,7 +146,7 @@ services:
       extnetwork:
         ipv4_address: 172.16.0.245
   redis-s6396:
-    image: redis:7.2 # 基础镜像
+    image: redis:8.10 # 基础镜像
     container_name: redis-s6396 # 容器名称
     restart: always
     environment: # 环境变量
