@@ -1,7 +1,7 @@
 version: '3'
 services:
   es01:
-    image: elasticsearch:7.10.1
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.19.0
     container_name: es01
     restart: always
     environment:
@@ -24,7 +24,7 @@ services:
       extnetwork:
         ipv4_address: 172.16.0.231
   kibana01:
-    image: kibana:7.10.1
+    image: docker.elastic.co/kibana/kibana:8.19.0
     container_name: kibana01
     restart: always
     ulimits:
